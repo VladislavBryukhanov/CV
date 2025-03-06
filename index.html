@@ -149,7 +149,7 @@
     .cloud-platforms .skill {
       text-align: left;
       padding: 10px;
-      width: 100%; /* Ширина на всю доступную ширину */
+/*       width: 100%; /* Ширина на всю доступную ширину */ */
     }
     .cloud-platforms .skill strong {
       display: block;
@@ -159,6 +159,17 @@
     .cloud-platforms .star-rating {
       display: inline-block;
       margin-right: 5px;
+      color: #f1c40f; /* Звёздочки остаются жёлтыми */
+    }
+    .cloud-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 0;
+      color: #333; /* Текст чёрный */
+    }
+    
+    .cloud-item .star-rating {
       color: #f1c40f; /* Звёздочки остаются жёлтыми */
     }
   </style>
@@ -242,36 +253,99 @@
       </div>
 
       <h3>Cloud Platforms</h3>
-      <div class="cloud-platforms">
+      <div class="skills-grid">
         <div class="skill">
           <strong>Firebase</strong>
-          <div><span class="star-rating">Functions ★★★★★</span></div>
-          <div><span class="star-rating">Storage ★★★★★</span></div>
-          <div><span class="star-rating">Remote Config ★★★★★</span></div>
-          <div><span class="star-rating">Auth ★★★★★</span></div>
-          <div><span class="star-rating">Messaging ★★★★★</span></div>
-          <div><span class="star-rating">Realtime DB ★★★★★</span></div>
-          <div><span class="star-rating">Firestore ★★★★★</span></div>
+          <div class="cloud-item">
+            <span>Functions</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Storage</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Remote Config</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Auth</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Messaging</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Realtime DB</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Firestore</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
         </div>
         <div class="skill">
           <strong>AWS</strong>
-          <div><span class="star-rating">S3 ★★★★★</span></div>
-          <div><span class="star-rating">Cognito ★★★★☆</span></div>
-          <div><span class="star-rating">Lambda ★★★★☆</span></div>
-          <div><span class="star-rating">DynamoDB ★★★★☆</span></div>
-          <div><span class="star-rating">API Gateway ★★★★☆</span></div>
-          <div><span class="star-rating">App Sync ★★★★☆</span></div>
-          <div><span class="star-rating">Amplify ★★★☆☆</span></div>
-          <div><span class="star-rating">EC2 ★★★☆☆</span></div>
-          <div><span class="star-rating">SQS ★★★☆☆</span></div>
-          <div><span class="star-rating">SNS ★★★☆☆</span></div>
+          <div class="cloud-item">
+            <span>S3</span>
+            <span class="star-rating">★★★★★</span>
+          </div>
+          <div class="cloud-item">
+            <span>Cognito</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>Lambda</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>DynamoDB</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>API Gateway</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>App Sync</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>Amplify</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>EC2</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>SQS</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>SNS</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
         </div>
         <div class="skill">
           <strong>Google Cloud</strong>
-          <div><span class="star-rating">Storage ★★★★☆</span></div>
-          <div><span class="star-rating">Vision ★★★★☆</span></div>
-          <div><span class="star-rating">Functions ★★★☆☆</span></div>
-          <div><span class="star-rating">BigQuery ★★★☆☆</span></div>
+          <div class="cloud-item">
+            <span>Storage</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>Vision</span>
+            <span class="star-rating">★★★★☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>Functions</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
+          <div class="cloud-item">
+            <span>BigQuery</span>
+            <span class="star-rating">★★★☆☆</span>
+          </div>
         </div>
       </div>
 
