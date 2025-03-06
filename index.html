@@ -18,7 +18,7 @@
       min-height: 100vh;
     }
     .container {
-      max-width: 800px;
+      max-width: 90%;
       width: 100%;
       padding: 20px;
       background: #fff;
@@ -88,6 +88,39 @@
     .work-experience p, .education p {
       margin: 5px 0;
     }
+    .company-name {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .degree {
+      color: #27ae60;
+      font-weight: bold;
+    }
+    .responsibilities, .technologies {
+      margin-left: 20px;
+    }
+    .responsibilities ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .technologies ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .technologies ul li {
+      background: #ecf0f1;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .full-time {
+      color: #2c3e50;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -95,9 +128,9 @@
   <div class="container">
     <div class="section">
       <h1>Full-Stack Developer</h1>
-      <p>During my career, I have utilized a wide range of technologies and developed both back-end and front-end solutions for applications across various industries, including IoT, CRM, factory analytics and management, and social interaction/dating. I have experience creating projects from scratch for commercial use, designing architecture, mentoring, conducting code reviews, and working effectively in a team environment.</p>
-      <p>I thrive on dynamically growing, large-scale projects that involve multiple contributors. I enjoy implementing complex functionalities, learning and integrating new technologies, and optimizing performance. I frequently investigate existing architectures, discuss improvements with the team, and take responsibility for various aspects of applications, including front-end, back-end, and native mobile development.</p>
-      <p>In my free time, I focus on improving my skills, exploring new technologies, and developing personal projects. Below, you can find examples of my work in my portfolio.</p>
+      <p>I am a highly skilled Full-Stack Developer with extensive experience in both front-end and back-end development. Over the years, I have worked on a wide range of projects, from startups and MVPs built from scratch to large-scale enterprise applications. My expertise spans across popular frameworks, databases, and cloud platforms, making me a versatile and valuable team member.</p>
+      <p>I have a proven track record of delivering high-quality solutions for industries such as IoT, CRM, factory analytics, and social interaction platforms. I thrive in dynamic environments where I can implement complex functionalities, optimize performance, and integrate new technologies. Whether it's developing new features, refactoring legacy code, or mentoring junior developers, I am always ready to take on challenges.</p>
+      <p>In my free time, I continuously improve my skills by exploring new technologies and working on personal projects. Below, you can find examples of my work in my portfolio.</p>
     </div>
 
     <div class="section">
@@ -113,60 +146,230 @@
 
     <div class="section">
       <h2>Languages</h2>
-      <p><strong>Russian</strong>: <span class="star-rating">★★★★★</span></p>
+      <p><strong>English</strong>: <span class="star-rating">★★★★☆</span></p>
       <p><strong>Ukrainian</strong>: <span class="star-rating">★★★★★</span></p>
-      <p><strong>English</strong>: <span class="star-rating">★★★☆☆</span></p>
+      <p><strong>Russian</strong>: <span class="star-rating">★★★★★</span></p>
     </div>
 
     <div class="section">
       <h2>Skills</h2>
+      <h3>Programming Languages</h3>
       <div class="skills-grid">
         <div class="skill"><strong>JavaScript</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>TypeScript</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Java</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Android SDK</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Angular 2+</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Ionic</strong>: <span class="star-rating">★★★☆☆</span></div>
+      </div>
+
+      <h3>Front-End Frameworks</h3>
+      <div class="skills-grid">
         <div class="skill"><strong>React</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>React Native</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Angular 2+</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Ionic</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Vue</strong>: <span class="star-rating">★★★★☆</span></div>
+      </div>
+
+      <h3>State Management</h3>
+      <div class="skills-grid">
         <div class="skill"><strong>Redux</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Mobx</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Vuex</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>RXJS</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Node</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Electron</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>NgRx</strong>: <span class="star-rating">★★★★☆</span></div>
+      </div>
+
+      <h3>Back-End Frameworks</h3>
+      <div class="skills-grid">
+        <div class="skill"><strong>Node</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Express</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Nest</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Nest</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Electron</strong>: <span class="star-rating">★★★★☆</span></div>
+      </div>
+
+      <h3>Databases & ORMs</h3>
+      <div class="skills-grid">
+        <div class="skill"><strong>MongoDB</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>MySQL</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>PSQL</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>ElasticSearch</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Redis</strong>: <span class="star-rating">★★★★☆</span></div>
         <div class="skill"><strong>Mongoose</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Sequelize</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Knex</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Apollo</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Socket.io (JS)</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Knex</strong>: <span class="star-rating">★★★★☆</span></div>
+<!--         <div class="skill"><strong>Apollo</strong>: <span class="star-rating">★★★★☆</span></div> -->
+<!--         <div class="skill"><strong>Socket.io</strong>: <span class="star-rating">★★★★☆</span></div> -->
+      </div>
+
+      <h3>Cloud Platforms</h3>
+      <div class="skills-grid">
+        <div class="skill"><strong>Firebase</strong>: Functions ★★★★★, Storage ★★★★★, Remote Config ★★★★★, Auth ★★★★★, Messaging ★★★★★, Realtime DB ★★★★★, Firestore ★★★★★</div>
+        <div class="skill"><strong>AWS</strong>: S3 ★★★★★, Cognito ★★★★☆, Lambda ★★★★☆, DynamoDB ★★★★☆, API Gateway ★★★★☆, App Sync ★★★★☆, Amplify ★★★☆☆, EC2 ★★★☆☆, SQS ★★★☆☆, SNS ★★★☆☆</div>
+        <div class="skill"><strong>Google Cloud</strong>: Storage ★★★★☆, Vision ★★★★☆, Functions ★★★☆☆, BigQuery ★★★☆☆</div>
+      </div>
+
+      <h3>Other Technologies</h3>
+      <div class="skills-grid">
+        <div class="skill"><strong>Salesforce API</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Vuforia</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Cloudinary</strong>: <span class="star-rating">★★★★☆</span></div>
       </div>
     </div>
 
     <div class="section">
       <h2>Work Experience</h2>
+
+      <h3 class="full-time">Full-Time Positions</h3>
+
       <div class="work-experience">
-        <h3>Full-Stack Web Developer at Kozak Group, Zaporizhia</h3>
+        <h3>Full-Stack Web Developer at <span class="company-name">Kozak Group</span>, Zaporizhia</h3>
         <p><strong>February 2018 - April 2020</strong></p>
-        <p>Developed CRM systems, news applications, and 3D model applications using technologies like Java Springboot, Angular 2, Flask, React.js, and more.</p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Developed CRM systems, news applications, and 3D model applications.</li>
+            <li>Worked with technologies like Java Springboot, Angular 2, Flask, React.js, and more.</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Java Springboot</li>
+            <li>MySQL</li>
+            <li>Angular 2</li>
+            <li>Flask (Python)</li>
+            <li>React.js</li>
+            <li>JQuery + CoffeeScript</li>
+          </ul>
+        </div>
       </div>
+
       <div class="work-experience">
-        <h3>Full-Stack JavaScript Developer at MintyMint, Remote</h3>
+        <h3>Full-Stack JavaScript Developer at <span class="company-name">MintyMint</span>, Remote</h3>
         <p><strong>April 2020 – November 2020</strong></p>
-        <p>Worked on a product tasting application, integrating Google Cloud Services, AWS ElasticSearch, and Ionic.</p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Developed an application for tasting products with admin panel, user reviews, and photo search.</li>
+            <li>Integrated ElasticSearch and Google Cloud Services.</li>
+            <li>Migrated old cloud solutions to new ones (Vuforia + Cloudinary to Google Cloud).</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Angular 8</li>
+            <li>Express</li>
+            <li>Google Cloud (Storage, Vision)</li>
+            <li>AWS ElasticSearch</li>
+            <li>Ionic</li>
+            <li>Vuforia</li>
+            <li>Cloudinary</li>
+            <li>Mongoose</li>
+          </ul>
+        </div>
       </div>
+
       <div class="work-experience">
-        <h3>NodeJS Engineer at Innovecs, Kyiv</h3>
+        <h3>NodeJS Engineer at <span class="company-name">Innovecs</span>, Kyiv</h3>
         <p><strong>November 2020 – April 2022</strong></p>
-        <p>Developed a trading platform using Moleculer, MySQL, Redis, and AWS services.</p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Optimized API performance and resolved auto-scaling issues.</li>
+            <li>Integrated Telegram API and maintained the system.</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Moleculer</li>
+            <li>MySQL</li>
+            <li>Redis</li>
+            <li>Sequelize</li>
+            <li>Telegram API</li>
+            <li>AWS (SQS, SNS, S3)</li>
+          </ul>
+        </div>
       </div>
+
       <div class="work-experience">
-        <h3>Senior Full-Stack Engineer at Logz.io, Remote</h3>
+        <h3>Senior Full-Stack Engineer at <span class="company-name">Logz.io</span>, Remote</h3>
         <p><strong>April 2022 – Present</strong></p>
-        <p>Migrated Angular.js to React, optimized backend code, and implemented full-stack features.</p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Migrated Angular.js to React and optimized backend code.</li>
+            <li>Implemented full-stack features with end-to-end testing.</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Express Microservices</li>
+            <li>Prisma</li>
+            <li>MySQL</li>
+            <li>React + Redux</li>
+            <li>Angular.js</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="full-time">Part-Time Positions</h3>
+
+      <div class="work-experience">
+        <h3>Node.js Developer at <span class="company-name">Kozak Group</span>, Remote</h3>
+        <p><strong>April 2020 – July 2020</strong></p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Synchronized Salesforce and MySQL databases.</li>
+            <li>Worked with SQL triggers and Salesforce API.</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Knex.js</li>
+            <li>Salesforce API</li>
+            <li>ElasticSearch</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work-experience">
+        <h3>Full-Stack JavaScript Developer at <span class="company-name">MintyMint</span>, Remote</h3>
+        <p><strong>November 2020 – March 2021</strong></p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Continued support for the product tasting application.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work-experience">
+        <h3>Senior Full-Stack Engineer at <span class="company-name">elKYC</span>, Remote</h3>
+        <p><strong>April 2021 – Present</strong></p>
+        <div class="responsibilities">
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>Developed KYC verification tools for financial organizations.</li>
+            <li>Integrated third-party services for biometric verification.</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>NestJS Microservices</li>
+            <li>Sequelize + PostgreSQL</li>
+            <li>Angular8</li>
+            <li>AWS S3</li>
+            <li>React + Redux</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -180,7 +383,7 @@
       <div class="education">
         <h3>Zaporozhye Institute of Economics and Information Technologies</h3>
         <p><strong>September 2018 – January 2020</strong></p>
-        <p>Bachelor’s Degree with Honors</p>
+        <p>Bachelor’s Degree with <span class="degree">Honours</span></p>
       </div>
     </div>
   </div>
