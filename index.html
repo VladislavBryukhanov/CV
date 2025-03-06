@@ -18,7 +18,7 @@
       min-height: 100vh;
     }
     .container {
-      max-width: 90%;
+      max-width: 800px;
       width: 100%;
       padding: 20px;
       background: #fff;
@@ -34,19 +34,20 @@
       margin-bottom: 10px;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-top: 30px;
       margin-bottom: 15px;
       border-bottom: 2px solid #2c3e50;
       padding-bottom: 5px;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-top: 20px;
       margin-bottom: 10px;
     }
     p {
       margin: 10px 0;
+      font-size: 1rem;
     }
     a {
       color: #3498db;
@@ -59,15 +60,18 @@
       margin-bottom: 20px;
     }
     .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 15px;
+      justify-content: center;
     }
     .skill {
       background: #ecf0f1;
       padding: 10px;
       border-radius: 5px;
       text-align: center;
+      width: 150px; /* Фиксированная ширина */
+      flex: 0 0 auto; /* Отключаем растяжение */
     }
     .portfolio-links {
       list-style: none;
@@ -120,6 +124,41 @@
       color: #2c3e50;
       font-size: 1.2rem;
       margin-top: 20px;
+      font-weight: bold;
+      background: #e8f5e9;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .part-time {
+      color: #2c3e50;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      font-weight: bold;
+      background: #fff3e0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .cloud-platforms {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .cloud-platforms .skill {
+      text-align: left;
+      padding: 10px;
+      width: 100%; /* Ширина на всю доступную ширину */
+    }
+    .cloud-platforms .skill strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #333; /* Убираем жёлтый цвет */
+    }
+    .cloud-platforms .star-rating {
+      display: inline-block;
+      margin-right: 5px;
+      color: #f1c40f; /* Звёздочки остаются жёлтыми */
     }
   </style>
 </head>
@@ -146,9 +185,9 @@
 
     <div class="section">
       <h2>Languages</h2>
-      <p><strong>English</strong>: <span class="star-rating">★★★★☆</span></p>
-      <p><strong>Ukrainian</strong>: <span class="star-rating">★★★★★</span></p>
       <p><strong>Russian</strong>: <span class="star-rating">★★★★★</span></p>
+      <p><strong>Ukrainian</strong>: <span class="star-rating">★★★★★</span></p>
+      <p><strong>English</strong>: <span class="star-rating">★★★☆☆</span></p>
     </div>
 
     <div class="section">
@@ -163,10 +202,10 @@
 
       <h3>Front-End Frameworks</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>React</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>React Native</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Angular 2+</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Ionic</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>React</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>React Native</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Vue</strong>: <span class="star-rating">★★★★☆</span></div>
       </div>
 
@@ -176,36 +215,62 @@
         <div class="skill"><strong>Mobx</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Vuex</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>RXJS</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>NgRx</strong>: <span class="star-rating">★★★★☆</span></div>
       </div>
 
       <h3>Back-End Frameworks</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>Node</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Node</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Electron</strong>: <span class="star-rating">★★★☆☆</span></div>
         <div class="skill"><strong>Express</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Nest</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Electron</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Nest</strong>: <span class="star-rating">★★★★☆</span></div>
       </div>
 
       <h3>Databases & ORMs</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>MongoDB</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>MySQL</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>PSQL</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>ElasticSearch</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Redis</strong>: <span class="star-rating">★★★★☆</span></div>
         <div class="skill"><strong>Mongoose</strong>: <span class="star-rating">★★★★★</span></div>
         <div class="skill"><strong>Sequelize</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Knex</strong>: <span class="star-rating">★★★★☆</span></div>
-<!--         <div class="skill"><strong>Apollo</strong>: <span class="star-rating">★★★★☆</span></div> -->
-<!--         <div class="skill"><strong>Socket.io</strong>: <span class="star-rating">★★★★☆</span></div> -->
+        <div class="skill"><strong>Knex</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Apollo</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Socket.io</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>MongoDB</strong>: <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>MySQL</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>PSQL</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>ElasticSearch</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Redis</strong>: <span class="star-rating">★★★☆☆</span></div>
       </div>
 
       <h3>Cloud Platforms</h3>
-      <div class="skills-grid">
-        <div class="skill"><strong>Firebase</strong>: Functions ★★★★★, Storage ★★★★★, Remote Config ★★★★★, Auth ★★★★★, Messaging ★★★★★, Realtime DB ★★★★★, Firestore ★★★★★</div>
-        <div class="skill"><strong>AWS</strong>: S3 ★★★★★, Cognito ★★★★☆, Lambda ★★★★☆, DynamoDB ★★★★☆, API Gateway ★★★★☆, App Sync ★★★★☆, Amplify ★★★☆☆, EC2 ★★★☆☆, SQS ★★★☆☆, SNS ★★★☆☆</div>
-        <div class="skill"><strong>Google Cloud</strong>: Storage ★★★★☆, Vision ★★★★☆, Functions ★★★☆☆, BigQuery ★★★☆☆</div>
+      <div class="cloud-platforms">
+        <div class="skill">
+          <strong>Firebase</strong>
+          <div><span class="star-rating">Functions ★★★★★</span></div>
+          <div><span class="star-rating">Storage ★★★★★</span></div>
+          <div><span class="star-rating">Remote Config ★★★★★</span></div>
+          <div><span class="star-rating">Auth ★★★★★</span></div>
+          <div><span class="star-rating">Messaging ★★★★★</span></div>
+          <div><span class="star-rating">Realtime DB ★★★★★</span></div>
+          <div><span class="star-rating">Firestore ★★★★★</span></div>
+        </div>
+        <div class="skill">
+          <strong>AWS</strong>
+          <div><span class="star-rating">S3 ★★★★★</span></div>
+          <div><span class="star-rating">Cognito ★★★★☆</span></div>
+          <div><span class="star-rating">Lambda ★★★★☆</span></div>
+          <div><span class="star-rating">DynamoDB ★★★★☆</span></div>
+          <div><span class="star-rating">API Gateway ★★★★☆</span></div>
+          <div><span class="star-rating">App Sync ★★★★☆</span></div>
+          <div><span class="star-rating">Amplify ★★★☆☆</span></div>
+          <div><span class="star-rating">EC2 ★★★☆☆</span></div>
+          <div><span class="star-rating">SQS ★★★☆☆</span></div>
+          <div><span class="star-rating">SNS ★★★☆☆</span></div>
+        </div>
+        <div class="skill">
+          <strong>Google Cloud</strong>
+          <div><span class="star-rating">Storage ★★★★☆</span></div>
+          <div><span class="star-rating">Vision ★★★★☆</span></div>
+          <div><span class="star-rating">Functions ★★★☆☆</span></div>
+          <div><span class="star-rating">BigQuery ★★★☆☆</span></div>
+        </div>
       </div>
 
       <h3>Other Technologies</h3>
@@ -228,7 +293,6 @@
           <p><strong>Responsibilities:</strong></p>
           <ul>
             <li>Developed CRM systems, news applications, and 3D model applications.</li>
-            <li>Worked with technologies like Java Springboot, Angular 2, Flask, React.js, and more.</li>
           </ul>
         </div>
         <div class="technologies">
@@ -316,7 +380,7 @@
         </div>
       </div>
 
-      <h3 class="full-time">Part-Time Positions</h3>
+      <h3 class="part-time">Part-Time Positions</h3>
 
       <div class="work-experience">
         <h3>Node.js Developer at <span class="company-name">Kozak Group</span>, Remote</h3>
