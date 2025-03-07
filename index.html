@@ -72,6 +72,8 @@
       text-align: center;
       width: 110px;
       flex: 0 0 auto; /* Отключаем растяжение */
+      display: flex;
+      flex-direction: column;
     }
     .portfolio-links {
       list-style: none;
@@ -140,7 +142,10 @@
       border-radius: 5px;
       display: inline-block;
     }
-    .cloud-platforms {
+   .cloud-platforms .skill {
+      width: 172px;
+    }
+/*     .cloud-platforms {
       display: flex;
       gap: 10px;
       flex-direction: row;
@@ -160,7 +165,7 @@
       display: inline-block;
       margin-right: 5px;
       color: #f1c40f; /* Звёздочки остаются жёлтыми */
-    }
+    } */
     .cloud-item {
       display: flex;
       justify-content: space-between;
@@ -198,63 +203,63 @@
 
     <div class="section">
       <h2>Languages</h2>
-      <p><strong>English</strong>: <span class="star-rating">★★★★☆</span></p>
-      <p><strong>Ukrainian</strong>: <span class="star-rating">★★★★★</span></p>
-      <p><strong>Russian</strong>: <span class="star-rating">★★★★★</span></p>
+      <p><strong>English</strong> <span class="star-rating">★★★★☆</span></p>
+      <p><strong>Ukrainian</strong> <span class="star-rating">★★★★★</span></p>
+      <p><strong>Russian</strong> <span class="star-rating">★★★★★</span></p>
     </div>
 
     <div class="section">
       <h2>Skills</h2>
       <h3>Programming Languages</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>JavaScript</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>TypeScript</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Java</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Android</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>JavaScript</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>TypeScript</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Java</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Android</strong> <span class="star-rating">★★★☆☆</span></div>
       </div>
 
       <h3>Front-End Frameworks</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>React</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>React Native</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Angular 2+</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Ionic</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Vue</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>React</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>React Native</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Angular 2+</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Ionic</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Vue</strong> <span class="star-rating">★★★★☆</span></div>
       </div>
 
       <h3>State Management</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>Redux</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Vuex</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>RXJS</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Mobx</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Redux</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Vuex</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>RXJS</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Mobx</strong> <span class="star-rating">★★★☆☆</span></div>
       </div>
 
       <h3>Back-End Frameworks</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>Node</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Express</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Nest</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Fastify</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Koa</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Electron</strong>: <span class="star-rating">★★★★☆</span></div>        
+        <div class="skill"><strong>Node</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Express</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Nest</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Fastify</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Koa</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Electron</strong> <span class="star-rating">★★★★☆</span></div>        
       </div>
 
       <h3>Databases & ORMs</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>MongoDB</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>MySQL</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>PSQL</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>ElasticSearch</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Redis</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>MongoDB</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>MySQL</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>PSQL</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>ElasticSearch</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Redis</strong> <span class="star-rating">★★★☆☆</span></div>
 
-        <div class="skill"><strong>Mongoose</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Sequelize</strong>: <span class="star-rating">★★★★★</span></div>
-        <div class="skill"><strong>Knex</strong>: <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Mongoose</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Sequelize</strong> <span class="star-rating">★★★★★</span></div>
+        <div class="skill"><strong>Knex</strong> <span class="star-rating">★★★☆☆</span></div>
       </div>
 
       <h3>Cloud Platforms</h3>
-      <div class="skills-grid">
+      <div class="skills-grid cloud-platforms">
         <div class="skill">
           <strong>Firebase</strong>
           <div class="cloud-item">
@@ -352,11 +357,11 @@
 
       <h3>Other Technologies</h3>
       <div class="skills-grid">
-        <div class="skill"><strong>Apollo</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Socket.io</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Salesforce API</strong>: <span class="star-rating">★★★☆☆</span></div>
-        <div class="skill"><strong>Vuforia</strong>: <span class="star-rating">★★★★☆</span></div>
-        <div class="skill"><strong>Cloudinary</strong>: <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Apollo</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Socket.io</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Salesforce API</strong> <span class="star-rating">★★★☆☆</span></div>
+        <div class="skill"><strong>Vuforia</strong> <span class="star-rating">★★★★☆</span></div>
+        <div class="skill"><strong>Cloudinary</strong> <span class="star-rating">★★★★☆</span></div>
       </div>
     </div>
 
