@@ -232,6 +232,7 @@
     </div>
 
 
+ 
     <div class="section">
       <h2>Work Experience</h2>
 
@@ -239,7 +240,7 @@
 
       <div class="work-experience">
         <h3>Full-Stack Web Developer at <span class="company-name">Kozak Group</span>, Zaporizhia</h3>
-        <p><strong>February 2018 - April 2020</strong></p>
+        <p><strong>November 2017 - April 2020</strong></p>
         <div class="responsibilities">
           <p><strong>Project Description:</strong></p>
           <p class="project-description">
@@ -275,10 +276,39 @@
       </div>
 
       <div class="work-experience">
-        <h3>Full-Stack JavaScript Developer at <span class="company-name">MintyMint</span>, Remote</h3>
-        <p><strong>April 2020 – November 2020</strong></p>
+        <h3>NodeJS Engineer at <span class="company-name">Innovecs</span>, Kyiv</h3>
+        <p><strong>April 2020 – April 2022</strong></p>
+      
+        <!-- Project 1: Trading Platform -->
         <div class="responsibilities">
-          <p><strong>Project Description:</strong></p>
+          <p><strong>Project 1: Trading Platform</strong></p>
+          <p class="project-description">
+            Worked on a trading platform with management tools for real-time customer communication, payment management, and more. Optimized API performance, resolved auto-scaling issues, and integrated Telegram API.
+          </p>
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li>API performance optimizing (SQL related).</li>
+            <li>Auto-scaling issues resolving (sync rate limit between multiple instances).</li>
+            <li>Technical design building - both architecture and tech documentation.</li>
+            <li>3rd party solutions researching and integrating (Telegram API).</li>
+            <li>Maintaining the system (bugfixes and refactoring).</li>
+          </ul>
+        </div>
+        <div class="technologies">
+          <p><strong>Technologies:</strong></p>
+          <ul>
+            <li>Moleculer</li>
+            <li>MySQL</li>
+            <li>Redis</li>
+            <li>Sequelize</li>
+            <li>Telegram API</li>
+            <li>AWS (SQS, SNS, S3)</li>
+          </ul>
+        </div>
+      
+        <!-- Project 2: Product Tasting Application -->
+        <div class="responsibilities">
+          <p><strong>Project 2: Product Tasting Application</strong></p>
           <p class="project-description">
             Developed an application for tasting products, which included an admin panel, user reviews, and the ability to search for products by photo. Integrated ElasticSearch and Google Cloud Services, and migrated old cloud solutions to new ones (Vuforia + Cloudinary to Google Cloud).
           </p>
@@ -309,38 +339,8 @@
       </div>
 
       <div class="work-experience">
-        <h3>NodeJS Engineer at <span class="company-name">Innovecs</span>, Kyiv</h3>
-        <p><strong>November 2020 – April 2022</strong></p>
-        <div class="responsibilities">
-          <p><strong>Project Description:</strong></p>
-          <p class="project-description">
-            Worked on a trading platform with management tools for real-time customer communication, payment management, and more. Optimized API performance, resolved auto-scaling issues, and integrated Telegram API.
-          </p>
-          <p><strong>Responsibilities:</strong></p>
-          <ul>
-            <li>API performance optimizing (SQL related).</li>
-            <li>Auto-scaling issues resolving (sync rate limit between multiple instances).</li>
-            <li>Technical design building - both architecture and tech documentation.</li>
-            <li>3rd party solutions researching and integrating (Telegram API).</li>
-            <li>Maintaining the system (bugfixes and refactoring).</li>
-          </ul>
-        </div>
-        <div class="technologies">
-          <p><strong>Technologies:</strong></p>
-          <ul>
-            <li>Moleculer</li>
-            <li>MySQL</li>
-            <li>Redis</li>
-            <li>Sequelize</li>
-            <li>Telegram API</li>
-            <li>AWS (SQS, SNS, S3)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="work-experience">
         <h3>Senior Full-Stack Engineer at <span class="company-name">Logz.io</span>, Remote</h3>
-        <p><strong>April 2022 – Present</strong></p>
+        <p><strong>April 2022 – March 2023</strong></p>
         <div class="responsibilities">
           <p><strong>Project Description:</strong></p>
           <p class="project-description">
@@ -368,70 +368,60 @@
         </div>
       </div>
 
-      <h3 class="part-time">Part-Time Positions</h3>
-
       <div class="work-experience">
-        <h3>Node.js Developer at <span class="company-name">Kozak Group</span>, Remote</h3>
-        <p><strong>April 2020 – July 2020</strong></p>
+        <h3>Senior Full-Stack Engineer at <span class="company-name">StellarSoft</span>, Remote</h3>
+        <p><strong>March 2023 – Present</strong></p>
         <div class="responsibilities">
-          <p><strong>Project Description:</strong></p>
+          <p><strong>Project 1: Mentoring Application</strong></p>
           <p class="project-description">
-            Developed a Node.js application to synchronize Salesforce and MySQL databases. Worked with SQL triggers and Salesforce API to ensure data consistency across different microservices.
+            Mentoring application for creating mentoring programs, student training, certification, questionnaires, qualification assessments, etc. Focused on backend development. This is an AWS cloud-based backend where I worked extensively with AWS CDK, AWS Lambda, AWS DynamoDB, AWS SMC, Neo4j + EC2, VCS, etc. I studied the legacy architecture, documented it, fixed the build and auto-deployment process built on AWS CDK lib, fixed bugs in DynamoDB & Neo4j synchronization and filtering, expanded functionality through new features, and created new triggers. Eventually, we decided to integrate a stable single source of truth - RDS PSQL, to eliminate numerous bugs and synchronization errors between DynamoDB & Neo4j via triggers. I worked on reworking the architecture and auto-deployment process - rewriting CDK lib stacks, adding new ones for all environments, configuring the security layer, and organizing data migration from existing databases to the new one. Additionally, there was some front-end work, which was server-side on the Remix framework and also deployed via AWS Lambda.
           </p>
           <p><strong>Responsibilities:</strong></p>
           <ul>
-            <li>Developed a Node.js application to synchronize Salesforce and MySQL databases.</li>
-            <li>Worked with SQL triggers and Salesforce API to ensure data consistency.</li>
+            <li>Studied and documented legacy architecture.</li>
+            <li>Fixed build and auto-deployment process.</li>
+            <li>Fixed bugs in DynamoDB & Neo4j synchronization and filtering.</li>
+            <li>Expanded functionality through new features and created new triggers.</li>
+            <li>Integrated RDS PSQL as a single source of truth.</li>
+            <li>Reworked architecture and auto-deployment process.</li>
+            <li>Configured security layer and organized data migration.</li>
+            <li>Worked on server-side front-end using Remix framework.</li>
           </ul>
         </div>
         <div class="technologies">
           <p><strong>Technologies:</strong></p>
           <ul>
-            <li>Knex.js</li>
-            <li>Salesforce API</li>
-            <li>ElasticSearch</li>
-            <li>Express.js</li>
+            <li>AWS CDK</li>
+            <li>AWS Lambda</li>
+            <li>AWS DynamoDB</li>
+            <li>AWS SMC</li>
+            <li>Neo4j</li>
+            <li>EC2</li>
+            <li>VCS</li>
+            <li>RDS PSQL</li>
+            <li>Remix</li>
+            <li>React</li>
           </ul>
         </div>
-      </div>
-
-      <div class="work-experience">
-        <h3>Full-Stack JavaScript Developer at <span class="company-name">MintyMint</span>, Remote</h3>
-        <p><strong>November 2020 – March 2021</strong></p>
         <div class="responsibilities">
-          <p><strong>Project Description:</strong></p>
+          <p><strong>Project 2: Legacy System Support</strong></p>
           <p class="project-description">
-            Continued support and development of the product tasting application described in the full-time position.
-          </p>
-        </div>
-      </div>
-
-      <div class="work-experience">
-        <h3>Senior Full-Stack Engineer at <span class="company-name">elKYC</span>, Remote</h3>
-        <p><strong>April 2021 – Present</strong></p>
-        <div class="responsibilities">
-          <p><strong>Project Description:</strong></p>
-          <p class="project-description">
-            Developed tools for KYC (Know Your Customer) verification for banks and financial organizations. Integrated third-party services for biometric verification and created management solutions for KYC processes.
+            Support and development of an existing legacy system consisting of several different microservices. Most of them were on Node.js, but one of them - the oldest - was on Python Django and was considered legacy. We worked on bug fixes and gradual migration of functionality to the Node.js codebase. However, the project required quick implementation of features in short timeframes and allocated little time for refactoring and migration, so a significant amount of time was spent on optimizing execution time and integrating functionality into the Python microservice instead of rewriting its functionality and customizing it in the Node.js environment. The front-end also had legacy code on React - class components, which I refactored and fixed as much as possible.
           </p>
           <p><strong>Responsibilities:</strong></p>
           <ul>
-            <li>Clarifying requirements with stakeholders.</li>
-            <li>3rd party services researching to fit product needs in biometry area (OZ, AWS Rekognition).</li>
-            <li>3rd party services integrating to check liveness and verify users' face matching (OZ).</li>
-            <li>New microservices designing and creating.</li>
-            <li>New React apps creating for biometry steps.</li>
-            <li>Existing React app refactoring and bugfixing.</li>
+            <li>Supported and developed existing legacy microservices.</li>
+            <li>Fixed bugs and gradually migrated functionality from Python Django to Node.js.</li>
+            <li>Optimized execution time and integrated functionality into the Python microservice.</li>
+            <li>Refactored and fixed legacy React class components.</li>
           </ul>
         </div>
         <div class="technologies">
           <p><strong>Technologies:</strong></p>
           <ul>
-            <li>NestJS Microservices</li>
-            <li>Sequelize + PostgreSQL</li>
-            <li>Angular8</li>
-            <li>AWS S3</li>
-            <li>React + Redux</li>
+            <li>Node.js</li>
+            <li>Python Django</li>
+            <li>React (Class Components)</li>
           </ul>
         </div>
       </div>
